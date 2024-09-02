@@ -1,0 +1,69 @@
+.btn-box a{
+    border: 2px solid #ee9ca7; /* Espessura da borda, estilo e cor */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: white; /* Cor de fundo do botão */
+    color: #ee9ca7; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de mão ao passar por cima */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave nas cores */
+    text-decoration: none;
+}
+
+.btn-box a:hover {
+    background-color: #ee9ca7; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    
+}
+
+.btn-box {
+    display: flex;
+    gap: 1em;
+}
+
+.btn-box a .btn:nth-of-type(2){
+    background-color: white;
+    color: #ee9ca7;
+}
+
+.btn-box a .btn:nth-of-type(2):hover{
+    background-color: #ee9ca7;
+    color: white;
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #ee9ca7;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: linear-gradient(to bottom, #ee9ca7, #ffdde1);
+}
+
+button{
+    border: 2px solid #ee9ca7; /* Espessura da borda, estilo e cor */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: white; /* Cor de fundo do botão */
+    color: #ee9ca7; /* Cor do texto do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de mão ao passar por cima */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave nas cores */
+    text-decoration: none;
+}
+
+.button :hover{
+    background-color: #ee9ca7; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+.button .btn:nth-of-type(2){
+    background-color: white;
+    color: #ee9ca7;
+}
+
+.button .btn:nth-of-type(2):hover{
+    background-color: #ee9ca7;
+    color: white;
+}

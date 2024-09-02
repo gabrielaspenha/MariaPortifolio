@@ -1,0 +1,119 @@
+.cabecalho{
+    font-size: 5rem;
+    text-align: center;
+    margin: 5rem 0;
+    background: linear-gradient(to right, #ee9ca7, #ffdde1);
+    color: transparent;
+    background-clip: text; /* Fundo do elemento visível apenas onde há texto */
+}
+
+.formacao{
+    padding: 100px 15px;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+.formacao h2{
+    margin-bottom: 5rem;
+}
+
+.itens-linha-do-tempo{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /* Itens se movam para uma nova linha quando não houver espaço suficiente na linha atual */
+    position: relative;
+    max-width: 1200px;
+}
+
+.itens-linha-do-tempo::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #ee9ca7;
+    left: calc(50% - 1px); /* Posição horizontal do elemento como 50% da largura menos 1 pixel, ajustando ligeiramente o posicionamento para a esquerda */
+}
+
+.item-linha-do-tempo{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+/* Selecionar o último filho */
+.item-linha-do-tempo:last-child{
+    margin-bottom: 0;
+}
+
+/* Seleciona elementos em posições ímpares*/
+.item-linha-do-tempo:nth-child(odd){
+    padding-right: calc(50% + 30px); /* Preenchimento interno à direita do elemento como 50% da largura mais 30 pixels, criando um grande espaço à direita */
+    text-align: right;
+}
+
+/* Seleciona elementos em posições pares*/
+.item-linha-do-tempo:nth-child(even){
+    padding-left: calc(50% + 30px); /* Preenchimento interno à esquerda do elemento como 50% da largura mais 30 pixels, criando um grande espaço à esquerda */
+}
+
+.linha-do-tempo-inicial{
+    height: 21px;
+    width: 21px;
+    background-color: #ffdde1;
+    box-shadow: 0 0 25px #ee9ca7,
+                0 0 50px #ffdde1; /* Aplica uma sombra ao redor */
+    position: absolute;
+    left: calc(50% - 8px); /* Posição horizontal do elemento com base em um cálculo: 50% da largura com menos 8 pixels. Isso centraliza o elemento, ajustando-o em 8 pixels para a esquerda */
+    border-radius: 50%;   
+    top: 10px;     
+}
+
+.linha-do-tempo-data{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 30px;
+}
+
+.linha-do-tempo-conteudo{
+    background-color: rgba(15, 15, 15, 0.37);
+    border: 3px solid #ffdde1;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px #ee9ca7;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.linha-do-tempo-conteudo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ee9ca7;
+}
+
+.linha-do-tempo-conteudo h3{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.linha-do-tempo-conteudo p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* Barra de rolagem no navegador */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+/* Arrastar para rolar a página*/
+::-webkit-scrollbar-thumb{
+    background-color: #ee9ca7;
+}
+
+/* Barra de rolagem (scroll) */
+::-webkit-scrollbar-track{
+    background-color: #ffdde1;
+}

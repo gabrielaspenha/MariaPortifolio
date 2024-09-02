@@ -1,0 +1,63 @@
+#portifolio{
+    background-color: rgba(15, 15, 15, 0.753); /* Cor do fundo */
+
+}
+
+#cabecalho{
+    text-align: 5em;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+.portifolio-container{
+    display: grid; /* Organização dos itens em linhas e colunas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout de colunas que se ajusta automaticamente ao espaço disponível. */
+    gap: 2em; /* Espaçamento */
+}
+
+.caixa{
+    text-align: start;
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites */
+    object-fit: cover; /* Redimensiona a imagem ou o conteúdo dentro do elemento para cobrir completamente o espaço disponível */
+    padding: 4em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3 ease-in-out; /* Transição */
+}
+
+ /* Quando passar o mouse sobre a caixa */
+.caixa:hover{
+    border: 3px solid #ee9ca7;
+}
+
+.caixa p{
+    opacity: 0.8;
+}
+
+.caixa h1{
+    font-size: 2em;
+    font-weight: 800;  /* Texto negrito */
+}
+
+.caixa img{
+    width: 15vw;
+    border-radius: 100%;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+.caixa a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos aplicados ao conteúdo gerado antes de um elemento <a> dentro de um elemento com a classe "caixa" */
+.caixa a::before{
+    text-decoration: none;
+}

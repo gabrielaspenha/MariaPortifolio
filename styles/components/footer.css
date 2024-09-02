@@ -1,0 +1,69 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 70%;
+    padding: 5em 15%;
+}
+
+.coluna-esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.coluna-caixa{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.coluna-caixa i{
+    font-size: 2em;
+}
+
+.coluna-caixa span{
+    font-size: 1.2em;
+}
+
+.coluna-direita{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+    max-width: 500px;
+}
+
+.coluna-direita span{
+    font-size: 1.3em;
+}
+
+.coluna-direita .rede-social-icons{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    gap: 1em;
+}
+
+.coluna-direita .rede-social-icons i{
+    font-size: 2em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.rede-social-icons i:hover{
+    color: white;
+}
+
+.rede-social-icons span a{
+    text-decoration: none;
+    color: #ee9ca7;
+}
+
+.rede-social-icons span a:hover{
+    text-decoration: none;
+}
+
